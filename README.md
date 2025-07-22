@@ -23,3 +23,35 @@ In the sample session, out of **65** captured screenshots:
 - 2 were marked as invalid and ignored.
 
 **OCR stability rate: 96.88%**
+
+OCR System Functionalities
+
+    Live website monitoring
+
+    Periodic screenshot capturing
+
+    Image cropping
+
+    Image preprocessing (contrast, thresholding, resizing)
+
+    OCR extraction using Tesseract
+
+    Custom character whitelist for OCR
+
+    Locale-aware number parsing
+
+    Decimal and thousand separator normalization
+
+    Currency symbol handling
+
+    Validation of numerical format and digit limits
+
+    Spike/drop filtering based on thresholds
+
+    Rollover detection and handling
+
+    Structured logging (CSV format with timestamp)
+
+    Saving original and processed images
+
+    Error handling for failed OCR or parsing
