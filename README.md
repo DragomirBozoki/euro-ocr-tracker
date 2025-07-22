@@ -20,6 +20,6 @@ This prevents sudden drops or misreadings (e.g., from noise or partial screensho
 
 In the sample session, out of **65** captured screenshots:
 - 62 were successfully and correctly parsed.
-- ⚠2 were marked as invalid and ignored.
+- 2 were marked as invalid and ignored.
 
 **OCR stability rate: 96.88%**
