@@ -1,3 +1,5 @@
-opencv-python==4.6.0.66
+selenium==4.16.0
+pillow==10.3.0
 pytesseract==0.3.10
-numpy==1.23.5
+pyyaml==6.0.1
+opencv-python==4.9.0.80
