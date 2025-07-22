@@ -1,0 +1,477 @@
+The geckodriver version (0.35.0) detected in PATH at /usr/bin/geckodriver might not be compatible with the detected firefox version (136.0); currently, geckodriver 0.36.0 is recommended for firefox 136.*, so it is advised to delete the driver in PATH and retry
+▸ Monitoring started (interval: 1s). Press Ctrl+C to stop.
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125039.png
+✓ Processed image saved: ./processed/processed_20250722_125039.png
+→ Raw OCR: 986.32
+✓ Valid OCR: 986.32
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125042.png
+✓ Processed image saved: ./processed/processed_20250722_125042.png
+→ Raw OCR: 997.02
+✓ Valid OCR: 997.02
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125043.png
+✓ Processed image saved: ./processed/processed_20250722_125043.png
+→ Raw OCR: 1,004.0
+✓ Valid OCR: 1004.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125045.png
+✓ Processed image saved: ./processed/processed_20250722_125045.png
+→ Raw OCR: 1,011.4
+✓ Valid OCR: 1011.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125047.png
+✓ Processed image saved: ./processed/processed_20250722_125047.png
+→ Raw OCR: 1,016.6
+✓ Valid OCR: 1016.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125049.png
+✓ Processed image saved: ./processed/processed_20250722_125049.png
+→ Raw OCR: 1,022.2
+✓ Valid OCR: 1022.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125051.png
+✓ Processed image saved: ./processed/processed_20250722_125051.png
+→ Raw OCR: 1,029.5
+✓ Valid OCR: 1029.5
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125053.png
+✓ Processed image saved: ./processed/processed_20250722_125053.png
+→ Raw OCR:
+⚠︎ Could not parse OCR text to number. Keeping last stable value:
+  → 1,029.5
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125054.png
+✓ Processed image saved: ./processed/processed_20250722_125054.png
+→ Raw OCR: 1,042.9
+✓ Valid OCR: 1042.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125056.png
+✓ Processed image saved: ./processed/processed_20250722_125056.png
+→ Raw OCR: 1,049.4
+✓ Valid OCR: 1049.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125058.png
+✓ Processed image saved: ./processed/processed_20250722_125058.png
+→ Raw OCR: 1,057.4
+✓ Valid OCR: 1057.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125100.png
+✓ Processed image saved: ./processed/processed_20250722_125100.png
+→ Raw OCR: 1,061.8
+✓ Valid OCR: 1061.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125102.png
+✓ Processed image saved: ./processed/processed_20250722_125102.png
+→ Raw OCR: 1
+✓ Valid OCR: 1.0
+⚠︎ Value dropped from 1061.8 to 1.0 (Δ=1060.8). Keeping last stable value:
+  → 1,061.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125103.png
+✓ Processed image saved: ./processed/processed_20250722_125103.png
+→ Raw OCR:
+⚠︎ Could not parse OCR text to number. Keeping last stable value:
+  → 1,061.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125106.png
+✓ Processed image saved: ./processed/processed_20250722_125106.png
+→ Raw OCR: 1,084.8
+✓ Valid OCR: 1084.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125107.png
+✓ Processed image saved: ./processed/processed_20250722_125107.png
+→ Raw OCR: 1,092.0
+✓ Valid OCR: 1092.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125109.png
+✓ Processed image saved: ./processed/processed_20250722_125109.png
+→ Raw OCR: 1,096.3
+✓ Valid OCR: 1096.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125111.png
+✓ Processed image saved: ./processed/processed_20250722_125111.png
+→ Raw OCR: 1,103.4
+✓ Valid OCR: 1103.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125113.png
+✓ Processed image saved: ./processed/processed_20250722_125113.png
+→ Raw OCR: 1,109.7
+✓ Valid OCR: 1109.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125115.png
+✓ Processed image saved: ./processed/processed_20250722_125115.png
+→ Raw OCR: 1,115.0
+✓ Valid OCR: 1115.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125117.png
+✓ Processed image saved: ./processed/processed_20250722_125117.png
+→ Raw OCR: 1,120.4
+✓ Valid OCR: 1120.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125118.png
+✓ Processed image saved: ./processed/processed_20250722_125118.png
+→ Raw OCR: 1,126.9
+✓ Valid OCR: 1126.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125120.png
+✓ Processed image saved: ./processed/processed_20250722_125120.png
+→ Raw OCR: 1,132.6
+✓ Valid OCR: 1132.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125122.png
+✓ Processed image saved: ./processed/processed_20250722_125122.png
+→ Raw OCR: 1,140.6
+✓ Valid OCR: 1140.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125123.png
+✓ Processed image saved: ./processed/processed_20250722_125123.png
+→ Raw OCR: 1,148.3
+✓ Valid OCR: 1148.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125125.png
+✓ Processed image saved: ./processed/processed_20250722_125125.png
+→ Raw OCR: 1,154.4
+✓ Valid OCR: 1154.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125127.png
+✓ Processed image saved: ./processed/processed_20250722_125127.png
+→ Raw OCR: 1,161.7
+✓ Valid OCR: 1161.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125129.png
+✓ Processed image saved: ./processed/processed_20250722_125129.png
+→ Raw OCR: 1,167.2
+✓ Valid OCR: 1167.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125131.png
+✓ Processed image saved: ./processed/processed_20250722_125131.png
+→ Raw OCR: 1,175.0
+✓ Valid OCR: 1175.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125132.png
+✓ Processed image saved: ./processed/processed_20250722_125132.png
+→ Raw OCR: 1,180.9
+✓ Valid OCR: 1180.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125134.png
+✓ Processed image saved: ./processed/processed_20250722_125134.png
+→ Raw OCR: 1,187.3
+✓ Valid OCR: 1187.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125136.png
+✓ Processed image saved: ./processed/processed_20250722_125136.png
+→ Raw OCR: 1,192.3
+✓ Valid OCR: 1192.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125138.png
+✓ Processed image saved: ./processed/processed_20250722_125138.png
+→ Raw OCR: 1,200.4
+✓ Valid OCR: 1200.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125139.png
+✓ Processed image saved: ./processed/processed_20250722_125139.png
+→ Raw OCR: 1,205.6
+✓ Valid OCR: 1205.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125141.png
+✓ Processed image saved: ./processed/processed_20250722_125141.png
+→ Raw OCR: 1,213.0
+✓ Valid OCR: 1213.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125143.png
+✓ Processed image saved: ./processed/processed_20250722_125143.png
+→ Raw OCR: 1,218.6
+✓ Valid OCR: 1218.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125145.png
+✓ Processed image saved: ./processed/processed_20250722_125145.png
+→ Raw OCR: 1,224.6
+✓ Valid OCR: 1224.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125146.png
+✓ Processed image saved: ./processed/processed_20250722_125146.png
+→ Raw OCR: 1,230.7
+✓ Valid OCR: 1230.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125148.png
+✓ Processed image saved: ./processed/processed_20250722_125148.png
+→ Raw OCR: 1,239.9
+✓ Valid OCR: 1239.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125150.png
+✓ Processed image saved: ./processed/processed_20250722_125150.png
+→ Raw OCR: 1,247.4
+✓ Valid OCR: 1247.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125152.png
+✓ Processed image saved: ./processed/processed_20250722_125152.png
+→ Raw OCR: 1,251.9
+✓ Valid OCR: 1251.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125153.png
+✓ Processed image saved: ./processed/processed_20250722_125153.png
+→ Raw OCR: 1,260.3
+✓ Valid OCR: 1260.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125155.png
+✓ Processed image saved: ./processed/processed_20250722_125155.png
+→ Raw OCR: 1,266.6
+✓ Valid OCR: 1266.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125157.png
+✓ Processed image saved: ./processed/processed_20250722_125157.png
+→ Raw OCR: 1,271.8
+✓ Valid OCR: 1271.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125159.png
+✓ Processed image saved: ./processed/processed_20250722_125159.png
+→ Raw OCR: 1,280.3
+✓ Valid OCR: 1280.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125201.png
+✓ Processed image saved: ./processed/processed_20250722_125201.png
+→ Raw OCR: 1,284.7
+✓ Valid OCR: 1284.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125202.png
+✓ Processed image saved: ./processed/processed_20250722_125202.png
+→ Raw OCR: 1,291.4
+✓ Valid OCR: 1291.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125204.png
+✓ Processed image saved: ./processed/processed_20250722_125204.png
+→ Raw OCR: 1,299.8
+✓ Valid OCR: 1299.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125206.png
+✓ Processed image saved: ./processed/processed_20250722_125206.png
+→ Raw OCR: 1,306.2
+✓ Valid OCR: 1306.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125208.png
+✓ Processed image saved: ./processed/processed_20250722_125208.png
+→ Raw OCR: 1,312.4
+✓ Valid OCR: 1312.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125210.png
+✓ Processed image saved: ./processed/processed_20250722_125210.png
+→ Raw OCR: 1,317.8
+✓ Valid OCR: 1317.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125211.png
+✓ Processed image saved: ./processed/processed_20250722_125211.png
+→ Raw OCR: 1,322.7
+✓ Valid OCR: 1322.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125213.png
+✓ Processed image saved: ./processed/processed_20250722_125213.png
+→ Raw OCR: 1,330.8
+✓ Valid OCR: 1330.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125215.png
+✓ Processed image saved: ./processed/processed_20250722_125215.png
+→ Raw OCR: 1,339.3
+✓ Valid OCR: 1339.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125217.png
+✓ Processed image saved: ./processed/processed_20250722_125217.png
+→ Raw OCR: 1,345.7
+✓ Valid OCR: 1345.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125218.png
+✓ Processed image saved: ./processed/processed_20250722_125218.png
+→ Raw OCR: 1,350.9
+✓ Valid OCR: 1350.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125220.png
+✓ Processed image saved: ./processed/processed_20250722_125220.png
+→ Raw OCR: 1,356.4
+✓ Valid OCR: 1356.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125222.png
+✓ Processed image saved: ./processed/processed_20250722_125222.png
+→ Raw OCR: 1,361.8
+✓ Valid OCR: 1361.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125224.png
+✓ Processed image saved: ./processed/processed_20250722_125224.png
+→ Raw OCR: 1,369.6
+✓ Valid OCR: 1369.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125225.png
+✓ Processed image saved: ./processed/processed_20250722_125225.png
+→ Raw OCR: 1,376.6
+✓ Valid OCR: 1376.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125227.png
+✓ Processed image saved: ./processed/processed_20250722_125227.png
+→ Raw OCR: 1,383.0
+✓ Valid OCR: 1383.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125229.png
+✓ Processed image saved: ./processed/processed_20250722_125229.png
+→ Raw OCR: 1,388.6
+✓ Valid OCR: 1388.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125231.png
+✓ Processed image saved: ./processed/processed_20250722_125231.png
+→ Raw OCR: 1,395.0
+✓ Valid OCR: 1395.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125232.png
+✓ Processed image saved: ./processed/processed_20250722_125232.png
+→ Raw OCR: 1,402.4
+✓ Valid OCR: 1402.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125234.png
+✓ Processed image saved: ./processed/processed_20250722_125234.png
+→ Raw OCR: 1,409.9
+✓ Valid OCR: 1409.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125236.png
+✓ Processed image saved: ./processed/processed_20250722_125236.png
+→ Raw OCR: 1,415.4
+✓ Valid OCR: 1415.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125238.png
+✓ Processed image saved: ./processed/processed_20250722_125238.png
+→ Raw OCR: 1,420.6
+✓ Valid OCR: 1420.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125239.png
+✓ Processed image saved: ./processed/processed_20250722_125239.png
+→ Raw OCR: 1,425.9
+✓ Valid OCR: 1425.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125241.png
+✓ Processed image saved: ./processed/processed_20250722_125241.png
+→ Raw OCR: 1,434.1
+✓ Valid OCR: 1434.1
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125243.png
+✓ Processed image saved: ./processed/processed_20250722_125243.png
+→ Raw OCR: 1,439.6
+✓ Valid OCR: 1439.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125245.png
+✓ Processed image saved: ./processed/processed_20250722_125245.png
+→ Raw OCR: 1,444.2
+✓ Valid OCR: 1444.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125246.png
+✓ Processed image saved: ./processed/processed_20250722_125246.png
+→ Raw OCR: 1,453.3
+✓ Valid OCR: 1453.3
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125248.png
+✓ Processed image saved: ./processed/processed_20250722_125248.png
+→ Raw OCR: 1,460.6
+✓ Valid OCR: 1460.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125250.png
+✓ Processed image saved: ./processed/processed_20250722_125250.png
+→ Raw OCR:
+⚠︎ Could not parse OCR text to number. Keeping last stable value:
+  → 1,460.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125252.png
+✓ Processed image saved: ./processed/processed_20250722_125252.png
+→ Raw OCR:
+⚠︎ Could not parse OCR text to number. Keeping last stable value:
+  → 1,460.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125253.png
+✓ Processed image saved: ./processed/processed_20250722_125253.png
+→ Raw OCR: 1,478.6
+✓ Valid OCR: 1478.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125255.png
+✓ Processed image saved: ./processed/processed_20250722_125255.png
+→ Raw OCR: 1,485.6
+✓ Valid OCR: 1485.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125257.png
+✓ Processed image saved: ./processed/processed_20250722_125257.png
+→ Raw OCR: 1,493.6
+✓ Valid OCR: 1493.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125259.png
+✓ Processed image saved: ./processed/processed_20250722_125259.png
+→ Raw OCR: 1,498.1
+✓ Valid OCR: 1498.1
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125300.png
+✓ Processed image saved: ./processed/processed_20250722_125300.png
+→ Raw OCR: 1,504.0
+✓ Valid OCR: 1504.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125302.png
+✓ Processed image saved: ./processed/processed_20250722_125302.png
+→ Raw OCR: 1,510.5
+✓ Valid OCR: 1510.5
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125304.png
+✓ Processed image saved: ./processed/processed_20250722_125304.png
+→ Raw OCR: 1,17.5
+✓ Valid OCR: 117.5
+⚠︎ Value dropped from 1510.5 to 117.5 (Δ=1393.0). Keeping last stable value:
+  → 1,510.5
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125306.png
+✓ Processed image saved: ./processed/processed_20250722_125306.png
+→ Raw OCR: 1,523.2
+✓ Valid OCR: 1523.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125307.png
+✓ Processed image saved: ./processed/processed_20250722_125307.png
+→ Raw OCR: 1,529.4
+✓ Valid OCR: 1529.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125309.png
+✓ Processed image saved: ./processed/processed_20250722_125309.png
+→ Raw OCR: 1,536.4
+✓ Valid OCR: 1536.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125311.png
+✓ Processed image saved: ./processed/processed_20250722_125311.png
+→ Raw OCR: 1,542.8
+✓ Valid OCR: 1542.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125313.png
+✓ Processed image saved: ./processed/processed_20250722_125313.png
+→ Raw OCR: 1,548.5
+✓ Valid OCR: 1548.5
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125314.png
+✓ Processed image saved: ./processed/processed_20250722_125314.png
+→ Raw OCR: 1,994.5
+✓ Valid OCR: 1994.5
+⚠︎ Value jumped from 1548.5 to 1994.5 (Δ=446.0). Keeping last stable value:
+  → 1,548.5
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125316.png
+✓ Processed image saved: ./processed/processed_20250722_125316.png
+→ Raw OCR: 1,560.8
+✓ Valid OCR: 1560.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125318.png
+✓ Processed image saved: ./processed/processed_20250722_125318.png
+→ Raw OCR: 1,566.4
+✓ Valid OCR: 1566.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125320.png
+✓ Processed image saved: ./processed/processed_20250722_125320.png
+→ Raw OCR: 1,572.4
+✓ Valid OCR: 1572.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125321.png
+✓ Processed image saved: ./processed/processed_20250722_125321.png
+→ Raw OCR: 1,580.6
+✓ Valid OCR: 1580.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125323.png
+✓ Processed image saved: ./processed/processed_20250722_125323.png
+→ Raw OCR: 1,587.7
+✓ Valid OCR: 1587.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125325.png
+✓ Processed image saved: ./processed/processed_20250722_125325.png
+→ Raw OCR: 1,592.6
+✓ Valid OCR: 1592.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125326.png
+✓ Processed image saved: ./processed/processed_20250722_125326.png
+→ Raw OCR: 1,597.7
+✓ Valid OCR: 1597.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125328.png
+✓ Processed image saved: ./processed/processed_20250722_125328.png
+→ Raw OCR: 1,605.2
+✓ Valid OCR: 1605.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125330.png
+✓ Processed image saved: ./processed/processed_20250722_125330.png
+→ Raw OCR: 1,613.0
+✓ Valid OCR: 1613.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125332.png
+✓ Processed image saved: ./processed/processed_20250722_125332.png
+→ Raw OCR: 14
+✓ Valid OCR: 14.0
+⚠︎ Value dropped from 1613.0 to 14.0 (Δ=1599.0). Keeping last stable value:
+  → 1,613.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125333.png
+✓ Processed image saved: ./processed/processed_20250722_125333.png
+→ Raw OCR:
+⚠︎ Could not parse OCR text to number. Keeping last stable value:
+  → 1,613.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125335.png
+✓ Processed image saved: ./processed/processed_20250722_125335.png
+→ Raw OCR: 1,633.6
+✓ Valid OCR: 1633.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125337.png
+✓ Processed image saved: ./processed/processed_20250722_125337.png
+→ Raw OCR: 1,641.2
+✓ Valid OCR: 1641.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125339.png
+✓ Processed image saved: ./processed/processed_20250722_125339.png
+→ Raw OCR: 1,647.7
+✓ Valid OCR: 1647.7
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125340.png
+✓ Processed image saved: ./processed/processed_20250722_125340.png
+→ Raw OCR: 1,653.9
+✓ Valid OCR: 1653.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125342.png
+✓ Processed image saved: ./processed/processed_20250722_125342.png
+→ Raw OCR: 1,659.8
+✓ Valid OCR: 1659.8
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125344.png
+✓ Processed image saved: ./processed/processed_20250722_125344.png
+→ Raw OCR: 1,664.4
+✓ Valid OCR: 1664.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125346.png
+✓ Processed image saved: ./processed/processed_20250722_125346.png
+→ Raw OCR: 1,669.9
+✓ Valid OCR: 1669.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125347.png
+✓ Processed image saved: ./processed/processed_20250722_125347.png
+→ Raw OCR:
+⚠︎ Could not parse OCR text to number. Keeping last stable value:
+  → 1,669.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125349.png
+✓ Processed image saved: ./processed/processed_20250722_125349.png
+→ Raw OCR: 1,682.9
+✓ Valid OCR: 1682.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125351.png
+✓ Processed image saved: ./processed/processed_20250722_125351.png
+→ Raw OCR:
+⚠︎ Could not parse OCR text to number. Keeping last stable value:
+  → 1,682.9
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125353.png
+✓ Processed image saved: ./processed/processed_20250722_125353.png
+→ Raw OCR: 1,695.0
+✓ Valid OCR: 1695.0
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125354.png
+✓ Processed image saved: ./processed/processed_20250722_125354.png
+→ Raw OCR: 1,701.2
+✓ Valid OCR: 1701.2
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125356.png
+✓ Processed image saved: ./processed/processed_20250722_125356.png
+→ Raw OCR: 1,706.6
+✓ Valid OCR: 1706.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125358.png
+✓ Processed image saved: ./processed/processed_20250722_125358.png
+→ Raw OCR: 1,714.6
+✓ Valid OCR: 1714.6
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125400.png
+✓ Processed image saved: ./processed/processed_20250722_125400.png
+→ Raw OCR: 1,720.4
+✓ Valid OCR: 1720.4
+✓ Screenshot saved: ./screenshots/screenshot_20250722_125401.png
+✓ Processed image saved: ./processed/processed_20250722_125401.png
+→ Raw OCR: 1,727.5
+✓ Valid OCR: 1727.5
