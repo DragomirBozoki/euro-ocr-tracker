@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import time
 import yaml
@@ -7,97 +8,112 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
-from helper import preprocess_image, extract_number
+from helper import preprocess_image  # koristi tvoj preprocessing.py
 
-# === Load config ===
-with open("config.yaml", "r") as f:
-    config = yaml.safe_load(f)
 
-# === Create folders ===
-os.makedirs(config["paths"]["screenshot_folder"], exist_ok=True)
-os.makedirs(config["paths"]["processed_folder"], exist_ok=True)
+def load_config(path: str = "config.yaml"):
+    with open(path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
 
-# === Selenium setup ===
-options = Options()
-driver = webdriver.Firefox(options=options)
-driver.get(config["target_url"])
-time.sleep(2)
 
-# === Init log ===
-if not os.path.exists(config["paths"]["log_file"]):
-    with open(config["paths"]["log_file"], "w") as f:
-        f.write("timestamp,ocr_result\n")
+def ensure_dirs(paths_cfg):
+    os.makedirs(paths_cfg["screenshot_folder"], exist_ok=True)
+    os.makedirs(paths_cfg["processed_folder"], exist_ok=True)
 
-print("▸ Monitoring started (interval: {}s). Press Ctrl+C to stop.".format(config["interval"]))
-last_valid_text = None
 
-try:
-    while True:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+def clear_old_files(paths_cfg):
+    for folder in [paths_cfg["screenshot_folder"], paths_cfg["processed_folder"]]:
+        for file_name in os.listdir(folder):
+            file_path = os.path.join(folder, file_name)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+    print("✔ Old files removed from folders.")
 
-        # Screenshot
-        screenshot_path = os.path.join(config["paths"]["screenshot_folder"], f"screenshot_{timestamp}.png")
-        driver.save_screenshot(screenshot_path)
-        print(f"✓ Screenshot saved: {screenshot_path}")
 
-        # Crop & preprocess
-        full_img = Image.open(screenshot_path)
-        cropped = full_img.crop(tuple(config["crop_region"]))
-        processed_img = preprocess_image(cropped, config)
-        processed_path = os.path.join(config["paths"]["processed_folder"], f"processed_{timestamp}.png")
-        processed_img.save(processed_path)
-        print(f"✓ Processed image saved: {processed_path}")
+def init_driver(url: str, headless: bool = False):
+    options = Options()
+    if headless:
+        options.add_argument("--headless")
+    driver = webdriver.Firefox(options=options)
+    driver.get(url)
+    time.sleep(2)
+    return driver
 
-        # OCR
-        tesseract_config = f"--psm {config['ocr']['psm']} -c tessedit_char_whitelist={config['ocr']['whitelist']}"
-        raw_text = pytesseract.image_to_string(processed_img, config=tesseract_config).strip()
-        print(f"→ Raw OCR: {raw_text}")
 
-        # Parse
-        extracted = extract_number(raw_text, config)
-        if extracted is None:
-            print("⚠︎ Could not parse OCR text to number. Keeping last stable value:")
-            print(f"  → {last_valid_text if last_valid_text else 'None'}")
+def init_log(log_path: str, jp_levels):
+    header = "timestamp," + ",".join([f"{lvl['name']} OCR TEXT" for lvl in jp_levels])
+    if not os.path.exists(log_path):
+        with open(log_path, "w", encoding="utf-8") as f:
+            f.write(header + "\n")
+
+
+def main():
+    config = load_config("config.yaml")
+
+    ensure_dirs(config["paths"])
+    clear_old_files(config["paths"])
+
+    init_log(config["paths"]["log_file"], config["jp_levels"])
+
+    driver = init_driver(config["target_url"], headless=False)
+
+    print(f"▶ Monitoring started (interval: {config['interval']}s). Press Ctrl+C to stop.\n")
+
+    try:
+        while True:
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+            # === Screenshot
+            screenshot_path = os.path.join(
+                config["paths"]["screenshot_folder"],
+                f"screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+            )
+            driver.save_screenshot(screenshot_path)
+            print(f"[{timestamp}] Screenshot saved: {screenshot_path}")
+
+            full_img = Image.open(screenshot_path)
+            ocr_results = {}
+
+            for level_conf in config["jp_levels"]:
+                level_name = level_conf["name"]
+                crop_box = tuple(level_conf["crop_region"])
+                cropped = full_img.crop(crop_box)
+
+                # Preprocess
+                processed_img = preprocess_image(cropped, config, level_name)
+                processed_path = os.path.join(
+                    config["paths"]["processed_folder"],
+                    f"{level_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+                )
+                processed_img.save(processed_path)
+
+                # OCR
+                tesseract_config = (
+                    f'--psm {config["ocr"]["psm"]} '
+                    f'--oem {config["ocr"]["oem"]} '
+                    f'-c tessedit_char_whitelist="{config["ocr"]["whitelist"]}"'
+                )
+                raw_text = pytesseract.image_to_string(processed_img, config=tesseract_config).strip()
+
+                # Log
+                print(f"   {level_name} OCR TEXT: {raw_text}")
+                ocr_results[level_name] = raw_text
+
+            # Save to CSV
+            with open(config["paths"]["log_file"], "a", encoding="utf-8") as f:
+                row = datetime.now().strftime("%Y%m%d_%H%M%S") + "," + ",".join(
+                    ocr_results.get(lvl["name"], "") for lvl in config["jp_levels"]
+                )
+                f.write(row + "\n")
+
+            print("-" * 60)  # separator
             time.sleep(config["interval"])
-            continue
 
-        # Check digits before decimal
-        before_decimal = str(int(extracted)).replace(config["format"]["thousand_separator"], "")
-        if len(before_decimal) > config["format"]["max_digits_before_decimal"]:
-            print(f"⚠︎ Too many digits before decimal point ({before_decimal}). Ignoring OCR result.")
-            time.sleep(config["interval"])
-            continue
+    except KeyboardInterrupt:
+        print("\n■ Monitoring stopped.")
+    finally:
+        driver.quit()
 
-        print(f"✓ Valid OCR: {extracted}")
 
-        # Compare to last valid
-        if last_valid_text:
-            previous = extract_number(last_valid_text, config)
-            if previous is not None:
-                delta = abs(extracted - previous)
-
-                # Ignore unrealistic jump up
-                if extracted > previous and delta > config["format"]["max_change"]:
-                    print(f"⚠︎ Value jumped from {previous} to {extracted} (Δ={delta}). Keeping last stable value:")
-                    print(f"  → {last_valid_text}")
-                    time.sleep(config["interval"])
-                    continue
-
-                # Ignore unrealistic drop down unless previous was too high
-                if extracted < previous and delta > config["format"]["max_drop"]:
-                    if previous < config["format"]["reset_threshold"]:
-                        print(f"⚠︎ Value dropped from {previous} to {extracted} (Δ={delta}). Keeping last stable value:")
-                        print(f"  → {last_valid_text}")
-                        time.sleep(config["interval"])
-                        continue
-
-        # Accept
-        last_valid_text = raw_text
-        with open(config["paths"]["log_file"], "a") as f:
-            f.write(f"{timestamp},{raw_text}\n")
-
-        time.sleep(config["interval"])
-
-except KeyboardInterrupt:
-    print("\n■ Monitoring stopped.")
-    driver.quit()
+if __name__ == "__main__":
+    main()
