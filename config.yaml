@@ -1,0 +1,38 @@
+preprocessing:
+  contrast: true
+  thresholding: true
+  resize:
+    enabled: true
+    fx: 2
+    fy: 2
+    interpolation: "INTER_CUBIC"
+
+paths:
+  screenshot_folder: "./screenshots/"
+  processed_folder: "./processed/"
+  log_file: "ocr_log.csv"
+
+target_url: "https://v0-random-number-display-olive.vercel.app/"
+
+crop_region: [0, 200, 1550, 600]
+
+ocr:
+  psm: 7
+  oem: 3
+  whitelist: "0123456789.,€$£"
+
+format:
+  currency_symbol: "€"
+  min_digits_before_dot: 3
+  currency_position: "suffix"  # options: prefix, suffix, none
+  decimal_separator: "."
+  thousand_separator: ","
+  decimals_required: true
+  min_decimals: 1
+  max_decimals: 2
+  max_digits_before_decimal: 4
+  max_change: 100.0     # max jump
+  max_drop: 100.0       # max fall
+  reset_threshold: 5000.0 # in case our counter went from 9999 back to 0
+
+interval: 1
