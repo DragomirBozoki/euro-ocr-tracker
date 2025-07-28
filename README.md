@@ -55,3 +55,42 @@ OCR System Functionalities
     Saving original and processed images
 
     Error handling for failed OCR or parsing
+
+# MQTT OCR Config Broadcaster
+
+This project reads a local `config.yaml` file, converts it to JSON, and repeatedly sends it via MQTT to a defined topic. It's designed for use cases where systems (e.g., OCR pipelines or embedded devices) subscribe to dynamic configuration parameters.
+
+---
+
+## 🚀 Features
+
+- Reads configuration from a YAML file
+- Converts and publishes it as JSON via MQTT
+- Publishes periodically (based on interval in config)
+- Works in any environment via Docker
+- Easily extendable to support camera capture, Selenium, OCR, etc.
+
+---
+
+## ⚙️ How It Works
+
+1. You edit the `config.yaml` file to define parameters (thresholds, regions, intervals, etc.).
+2. The Python script reads the file and converts it into a structured JSON payload.
+3. The payload is sent to a specific MQTT topic (e.g., `test/ocr/config`) at regular intervals.
+4. Any subscriber connected to that topic will receive the updated configuration and can act on it.
+5. You can package everything into Docker to eliminate all dependencies.
+
+---
+
+## 🐳 Using Docker
+
+### 1. Build the Docker image:
+
+```bash
+docker build -t mqtt-ocr .
+
+docker run --rm -it mqtt-ocr
+
+docker run --rm -it -v $PWD/config.yaml:/app/config.yaml mqtt-ocr
+
+
